@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Exer_005 {
 
-    public static void main( String[] args ) {
+    public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
@@ -13,14 +13,14 @@ public class Exer_005 {
 
         // pegar elementos do vetorA
 
-        for(int i = 0 ; i < vetorA.length; i++ ) {
-            System.out.print("Entre com o " + ( i + 1 ) + " elemento do vetor A: " );
+        for (int i = 0; i < vetorA.length; i++) {
+            System.out.print("Entre com o " + (i + 1) + " elemento do vetor A: ");
             vetorA[i] = sc.nextInt();
         }
 
         // lógica pra colocar os elementos do vetorB
 
-        for( int i = 0; i < vetorB.length ; i++ ) {
+        for (int i = 0; i < vetorB.length; i++) {
 
             vetorB[i] = vetorA[i] * i;
         }
@@ -28,7 +28,7 @@ public class Exer_005 {
         // printar na tela o vetorA
 
         System.out.print("Vetor A = ");
-        for( int i = 0 ; i < vetorA.length ; i++ ) {
+        for (int i = 0; i < vetorA.length; i++) {
 
             System.out.print(vetorA[i] + " ");
 
@@ -40,11 +40,11 @@ public class Exer_005 {
 
         System.out.print("Vetor B = ");
 
-        for( int i = 0 ; i < vetorB.length ; i++ ) {
+        for (int i = 0; i < vetorB.length; i++) {
 
             System.out.print(vetorB[i] + " ");
         }
 
-sc.close();
+        sc.close();
     }
 }
